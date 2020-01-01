@@ -4,6 +4,7 @@ const path = require('path')
 const bodeParser = require('body-parser')
 const GoogleSpreadsheet = require('google-spreadsheet')
 const credentials = require('./bugtracker.json')
+const { promisify } = require('util')
 
 // configurações
 const docId = '1z7vYjch9iQFixY2bapfGcuFpGcilEz_uX8niwMFWjpo'
@@ -17,24 +18,28 @@ app.use(bodeParser.urlencoded({ extended: true })) /** decodifica a url encoded 
 app.get('/', (request, response) => {
     response.render('home')
 })
-app.post('/', (request, response) => {
-
-    const doc = new GoogleSpreadsheet(docId)
-    doc.useServiceAccountAuth(credentials, (err) => {
-        if (err) {
-            console.log('Nao foi possivel abrir a planilha')
-        } else {
-            console.log('planilha aberta')
-            doc.getInfo((err, info) => {
-                const worksheet = info.worksheets[worksheetIndex]
-                worksheet.addRow( {'name': request.body.name, 'email': request.body.email, 'issueType': request.body.issueType, 
-                                    'howToReproduce': request.body.howToReproduce, 'expectedOutput': request.body.expectedOutput, 'receivedOutput': request.body.receivedOutput}, err => {
-                    response.send('bug reportado com sucesso!')
-                })
-            })
-        }
-    })
+app.post('/', async(request, response) => {
+    try {
+        const doc = new GoogleSpreadsheet(docId)
+        await promisify(doc.useServiceAccountAuth)(credentials)
+        console.log('planilha aberta')
+        const info = await promisify(doc.getInfo)()
+        const worksheet = info.worksheets[worksheetIndex]
+        await promisify(worksheet.addRow)({
+            'name': request.body.name, 
+            'email': request.body.email, 
+            'issueType': request.body.issueType, 
+            'howToReproduce': request.body.howToReproduce, 
+            'expectedOutput': request.body.expectedOutput, 
+            'receivedOutput': request.body.receivedOutput
+        })
+        response.send('bug reportado com sucesso')
+    } catch {
+        response.send('Erro ao enviar o formulário')
+        console.log(err)
+    }
 })
+
 app.listen(3000, (err) => {
     if (err) {
         console.log('Ocorreu um erro.', err)
