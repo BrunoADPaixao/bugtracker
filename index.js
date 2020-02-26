@@ -7,7 +7,7 @@ const credentials = require('./bugtracker.json')
 const { promisify } = require('util')
 
 // configurações
-const docId = '1z7vYjch9iQFixY2bapfGcuFpGcilEz_uX8niwMFWjpo'
+const docId = 'chave da sua api google sheets'
 const worksheetIndex = 0
 
 app.set('view engine', 'ejs') /** seta o ejs como template builder da aplicação */
