@@ -1,8 +1,8 @@
 {
   "type": "service_account",
   "project_id": "bugtracker-263622",
-  "private_key_id": "13084a4d800d0bbb260d1a54f6a21dd9f5d0a4dd",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3A9lX2srrq5fJ\niKKV1apIj+9KC/RpCz9gDa2aTs47Weppg90al1mIeNgr5qFyhWoh+ZUPPA/dtfyP\nnjisO7vR/1ad+YjUpQNYSrHUzEREvkq4u7jyXSIT9u5w8C/bt+7pmOiUvAH1dhQG\nlorgHiRsPj9bwfmV/OE5aNEefpNR2cOGchllaWO3zrNRJYD6aDh/GtO0auLrhLem\nJBmjCMzEpJz/MtBWO5aIPhTgRSGhA2WdzTrMcmAf5Gdc1hItSceTuAwRhxLQ4NSL\njVHflAOWJF/ILjX3LCn2DpO9gurQIXsIoqLsTj8fJnoNQp4FPS/eZS+o60Wky91f\nTDINRKmZAgMBAAECggEADBBzY9thlAktiin5JG0U0BAOQ0XSze02t3NqCxQrJnYb\nbJWLiOS1kLhSm7Y/f0f0gpqBbSMq8pURZJBBW80w6OYZmh6ob/K+wTO5/EqeLMqU\ngg/8ivGBEmrX4Kxco0cWjIyOtxCbr8ghstDQBSJyM+EjQRO3iwpuowpZ+qt3tPtM\nMceIG6Sr2nbijMQMlbn7lHdvZilBe+HkuC2YMu4/H8l4YUEExFTnBGcRR+oCkDqg\nZsLvLB2uGucPMS28TI+nj9XlrdtLiE01l1fDuNFB7Pq48mziCfan+PaiJ3CIivhj\nokwInP7xSxCU4YcuvHjZwwGPHHZWNdV5ghZEHSs4XwKBgQDhwdD6W2J7K//KnP2O\nx9N+anhRYH9YkHgZ3nutF44W9Mc1d4RVetlDxG4/DqW3Vp/UIfwH+hqZg3A0/SMM\nuetR9XqAOvsRtaIXNEV2tePdvVS+Or85PzLHAzmYe+V8Xdn0bJQTxtJSqOxgFXB4\nPf2sn3Ar2XDz4OslNMhw0dZbJwKBgQDPiDkm1LqBsA8ztEnXDSqCphH9QrTlnPNH\nJuAIuZgoXRQZPP6BVbC4J75klvh/4CZRiELRXFdjLtQg0dUf//0QNdUBlh3Idf4g\nURZGIG9xz2j5BFKvKQ32XOpYtcl663bEZ1FvnC6vUW0JOLGR+O4PW48nsvz4hh7/\nemqUFQrNPwKBgDyNKaoc3LtAv+juVqv3OOjNUdwxz7ZHeY8mt3Fjwf6yRMQ4fEwZ\nGTEt/Iv5N8WG/HN/cgQJtxy5vlzYEJCXRWDEQMkoCLNlTkZ/BKqkequ83n/vbd7C\n7rGmUcpuYM0Mtyrx/H2ZdEwrdssGtRXrOqEUWpfISJ2BFFD0aVapUZ89AoGASQUC\nLuJ8ePMMdkHCFVOBmJR8EeMtqPiPNIK+IvPCULlnP/YRCkqvMixxtgzUhJHGibtq\n3yUhbjlk0+NgnLDCRrjaKIO8GPNDJfXB44y4CZBTvAJEYXMNgZhxsCLOMFy23iYI\nJkAKwQ7iUXNMLzMp9+dcODim/36ZW4SkCVRaB5sCgYBJhlVYO22fmaoz6LY8Je8C\nrIMtInKhn0Ak6uc3O37pEuwFyEXs06iSDei3klJ7zJLdiBboDl/RsuVBorf4jCdt\nQjkG6pv4rBQccdyISKMK091STp6ZOm4IGJViWG0NdLHLTgfpbFCK4SgMq/SV+1Gh\nbeoN8m2N1z8ugC0898bi8w==\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "key_id_string",
+  "private_key": "key_string",
   "client_email": "bugtracker@bugtracker-263622.iam.gserviceaccount.com",
   "client_id": "116763965739300927119",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
